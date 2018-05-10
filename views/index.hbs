@@ -1,2 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Bill, Please!</h1>
+<p>Let's search for some bills introduced by the 115th Congress 📝</p>
+<form action="/search" method="GET">
+  <div class="input-group mb-3">
+    <input type="text" name="query" id="searchQuery" class="form-control" placeholder="Search terms like 'Immigration', 'Health Care', etc." aria-label="Search" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" onclick="search()"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+</form>
