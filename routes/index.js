@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 
-var api_key = process.env.API_KEY;
+var api_key = process.env.PROPUBLICA_API_KEY;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
