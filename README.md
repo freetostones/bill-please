@@ -21,12 +21,15 @@ And you can sort the results based on:
 * ProPublica Congress API Key
 
 ## Installation
+First clone the repository:
 ```
 git clone https://github.com/freetostones/bill-please.git
 ```
+Then change into the application directory:
 ```
 cd bill-please
 ```
+And finally, install the dependencies:
 ```
 npm install
 ```
@@ -63,4 +66,4 @@ Go to `http://localhost:3000/` in your browser to check it out!
 
 ## License
 
-[MIT](LICENSE)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
