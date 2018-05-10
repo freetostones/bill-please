@@ -3,22 +3,22 @@
 A simple Express application that lets you look up bills introduced in then 115th Congress.
 
 You can search for bills related to:
-⋅⋅* Health Care
-⋅⋅* Tariffs
-⋅⋅* Nutrition
-⋅⋅* Immigration
-⋅⋅* Aviation
-⋅⋅* Opioids
+* Health Care
+* Tariffs
+* Nutrition
+* Immigration
+* Aviation
+* Opioids
 
 And you can sort the results based on:
-⋅⋅* Number of co-sponsors
-⋅⋅* Number of related bills
-⋅⋅* Amount of bipartisan support
+* Number of co-sponsors
+* Number of related bills
+* Amount of bipartisan support
 
 ## Requirements
-⋅⋅* NodeJS
-⋅⋅* Git
-⋅⋅* ProPublica Congress API Key
+* NodeJS
+* Git
+* ProPublica Congress API Key
 
 ## Installation
 ```
@@ -33,9 +33,7 @@ npm install
 
 ## Getting Started
 
-Before you run the application, you need to make sure you have a valid API Key for ProPublica's Congress API.
-
-Request access for an API Key [here](https://www.propublica.org/datastore/api/propublica-congress-api)
+Before you run the application, you need to make sure you have a valid API Key for ProPublica's Congress API. Request access for an API Key [here](https://www.propublica.org/datastore/api/propublica-congress-api).
 
 Once you have your key, lets add it to your development environment so the application has access to it.
 
