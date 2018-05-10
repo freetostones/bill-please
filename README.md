@@ -3,22 +3,22 @@
 A simple Express application that lets you look up bills introduced in then 115th Congress.
 
 You can search for bills related to:
-	◦	Health Care
-	◦	Tariffs
-	◦	Nutrition
-	◦	Immigration
-	◦	Aviation
-	◦	Opioids
+⋅⋅* Health Care
+⋅⋅* Tariffs
+⋅⋅* Nutrition
+⋅⋅* Immigration
+⋅⋅* Aviation
+⋅⋅* Opioids
 
-  And you can sort the results based on:
-  	◦	Number of co-sponsors
-  	◦	Number of related bills
-  	◦	Amount of bipartisan support
+And you can sort the results based on:
+⋅⋅* Number of co-sponsors
+⋅⋅* Number of related bills
+⋅⋅* Amount of bipartisan support
 
 ## Requirements
-  ◦	NodeJS
-  ◦	Git
-  ◦	ProPublica Congress API Key
+⋅⋅* NodeJS
+⋅⋅* Git
+⋅⋅* ProPublica Congress API Key
 
 ## Installation
 ```
