@@ -5,13 +5,12 @@
   </div>
   <form action="/search" method="GET">
     <div class="form-group mb-3">
-      <label for="exampleFormControlSelect1">Sort results by:</label>
+      <label for="exampleFormControlSelect1">Sort search results by:</label>
       <select class="form-control" name="sortType" id="sortType">
         <option>Co-Sponsors</option>
-        <option>Recent Action</option>
-        <option>Related Bills</option>
+        <option disabled>Recent Action</option>
+        <option disabled>Related Bills</option>
       </select>
-    </div>
     </div>
     <div class="input-group mb-3">
       <input type="text" name="query" id="searchQuery" class="form-control" placeholder="Search terms like 'Immigration', 'Health Care', etc." aria-label="Search" aria-describedby="basic-addon2">

@@ -13,7 +13,7 @@ You can search for bills related to:
 And you can sort the results based on:
 * Number of co-sponsors
 * Number of related bills
-* Amount of bipartisan support
+* Recent Action
 
 ## Requirements
 * NodeJS

@@ -16,15 +16,22 @@ router.get('/', function(req, res, next) {
 
 });
 
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('about');
+});
+
 router.get('/search', function(req, res, next) {
   // req.session.history.push(req.params.query);
-  console.log(req.params.sortType);
+
   var options = {
     url: 'https://api.propublica.org/congress/v1/bills/search.json?query=' + req.params.query,
     headers: {
       'X-API-Key': api_key
     }
   };
+
+  console.log(req.params.query);
 
   function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
