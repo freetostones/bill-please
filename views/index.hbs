@@ -1,10 +1,31 @@
-<h1>Bill, Please!</h1>
-<p>Let's search for some bills introduced by the 115th Congress 📝</p>
-<form action="/search" method="GET">
-  <div class="input-group mb-3">
-    <input type="text" name="query" id="searchQuery" class="form-control" placeholder="Search terms like 'Immigration', 'Health Care', etc." aria-label="Search" aria-describedby="basic-addon2">
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary" onclick="search()"><i class="fas fa-search"></i></button>
-    </div>
+<div class="container">
+  <div class="header">
+    <h1 class="display-1">Bill, Please!</h1>
+    <h2>Let's search for some bills introduced by the 115th Congress 📝</h2>
   </div>
-</form>
+  <form action="/search" method="GET">
+    <div class="form-group mb-3">
+      <label for="exampleFormControlSelect1">Sort results by:</label>
+      <select class="form-control" name="sortType" id="sortType">
+        <option>Co-Sponsors</option>
+        <option>Recent Action</option>
+        <option>Related Bills</option>
+      </select>
+    </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" name="query" id="searchQuery" class="form-control" placeholder="Search terms like 'Immigration', 'Health Care', etc." aria-label="Search" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" onclick="search()"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </form>
+  {{# if history}}
+    <!-- {{# each history}}
+      <p>
+       {{history}}
+      </p>
+    {{/each}} -->
+    <h1> how bou dah </h1>
+  {{/if}}
+</div>
