@@ -3,19 +3,19 @@
     <h1 class="display-1">Bill, Please!</h1>
     <h2>Let's search for some bills introduced by the 115th Congress 📝</h2>
   </div>
-  <form action="/search" method="GET">
+  <form action="/submit" method="POST">
     <div class="form-group mb-3">
       <label for="exampleFormControlSelect1">Sort search results by:</label>
       <select class="form-control" name="sortType" id="sortType">
-        <option>Co-Sponsors</option>
-        <option disabled>Recent Action</option>
-        <option disabled>Related Bills</option>
+        <option value="co-sponsors">Co-Sponsors</option>
+        <option value="action">Recent Action</option>
+        <option value="related" disabled>Related Bills</option>
       </select>
     </div>
     <div class="input-group mb-3">
       <input type="text" name="query" id="searchQuery" class="form-control" placeholder="Search terms like 'Immigration', 'Health Care', etc." aria-label="Search" aria-describedby="basic-addon2">
       <div class="input-group-append">
-        <button class="btn btn-outline-secondary" onclick="search()"><i class="fas fa-search"></i></button>
+        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
       </div>
     </div>
   </form>

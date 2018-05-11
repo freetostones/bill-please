@@ -1,4 +1,7 @@
-<h1>Search Results</h1>
+<div class="header">
+  <h1>Search Results</h1>
+</div>
+{{#if data }}
 <div>
   {{#each data}}
   <div class="card">
@@ -6,7 +9,7 @@
       <h3 class="card-title">{{number}}: {{title}}</h3>
     </div>
     <div class="card-body">
-      <ul class="list-group list-group">
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">
           <b>Primary Subject:</b> {{primary_subject}}
         </li>
@@ -17,13 +20,19 @@
           <b>Sponsor:</b> {{sponsor_title}} {{sponsor_name}} | {{sponsor_party}} - {{sponsor_state}}
         </li>
         <li class="list-group-item">
-          Num of Co-Sponsors: {{cosponsors}}
+          <b>Num of Co-Sponsors:</b> <span class="badge badge-primary badge-pill">{{cosponsors}}</span>
         </li>
-        <li class="list-group-item">
-          <a href="{{congressdotgov_url}}/text" class="card-link">Read full bill here!</a>
-        </li>
+        <!-- <li class="list-group-item">
+
+        </li> -->
       </ul>
+      <a class="btn btn-primary" href="{{congressdotgov_url}}/text" class="card-link">Read full bill here!</a>
     </div>
   </div>
   {{/each}}
 </div>
+{{else}}
+<div class="alert alert-danger" role="alert">
+  No results match your query.
+</div>
+{{/if }}
