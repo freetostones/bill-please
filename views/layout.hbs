@@ -11,21 +11,19 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-      <a class="navbar-brand" href="/">Bill, Please!</a>
+      <a class="navbar-brand" href="/"><b>Bill, Please!</b></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/freetostones/bill-please">Github</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
         </ul>
       </div>
+      <form class="form-inline my-2 my-lg-0" action="/submit" method="POST">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" value="">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search" id="searchIconWhite"></i></button>
+      </form>
     </nav>
     {{{body}}}
-    <!-- <nav class="navbar fixed-bottom navbar-light bg-light">
-      <a class="navbar-brand" href="#">Fixed bottom</a>
-    </nav> -->
   </body>
 </html>

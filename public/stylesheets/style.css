@@ -8,5 +8,22 @@ a {
 }
 
 .header {
-  padding-top: 100px;
+  padding-top: 35px;
+}
+
+.header-small {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.item{
+  padding-bottom: 10px;
+}
+
+#searchIconWhite {
+  color: #fff;
+}
+
+#searchIconWhite:hover {
+  color: #495056;
 }

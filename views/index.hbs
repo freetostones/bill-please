@@ -1,15 +1,15 @@
 <div class="container">
   <div class="header">
-    <h1 class="display-1">Bill, Please!</h1>
-    <h2>Let's search for some bills introduced by the 115th Congress 📝</h2>
+    <h1 class="display-1">Bill, Please! 🗒‍</h1>
+    <h2>Let's search for some bills introduced by the 115th Congress.</h2>
   </div>
   <form action="/submit" method="POST">
     <div class="form-group mb-3">
       <label for="exampleFormControlSelect1">Sort search results by:</label>
       <select class="form-control" name="sortType" id="sortType">
-        <option value="co-sponsors">Co-Sponsors</option>
-        <option value="action">Recent Action</option>
-        <option value="related" disabled>Related Bills</option>
+        <option value="Co-Sponsors">Co-Sponsors</option>
+        <option value="Recent-Action">Recent Action</option>
+        <option value="Related-Bills">Related Bills</option>
       </select>
     </div>
     <div class="input-group mb-3">
@@ -20,11 +20,20 @@
     </div>
   </form>
   {{# if history}}
-    <!-- {{# each history}}
-      <p>
-       {{history}}
-      </p>
-    {{/each}} -->
-    <h1> how bou dah </h1>
+    <h3>Recent Searches:</h3>
+    <div class="card-deck">
+    {{# each_upto history 5}}
+      <div class="card" border-primary>
+        <div class="card-body">
+          <p class="card-text"><b>Query:</b> {{ query }}</p>
+          <p class="card-text"><b>Sort Type:</b></p>
+          <p>{{ sortType }}</p>
+        </div>
+        <div class="card-footer" center>
+          <a class="btn btn-primary" href="/search/{{ sortType }}/{{ query }}" class="card-link"><b>SEARCH AGAIN</b></a>
+        </div>
+      </div>
+    {{/each_upto}}
+    </div>
   {{/if}}
 </div>
